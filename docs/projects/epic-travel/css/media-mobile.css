@@ -1,0 +1,147 @@
+/* ! Mobile */
+
+@media (max-width: 767px) {
+  /* ! Global */
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .container,
+  .container.container-small {
+    width: 320px;
+  }
+
+  /* ! Считаю, что тут Юрий ошибся, прописав .container.container-small {  width: 290px;} */
+  /* todo  Он забыл учесть  padding: 0 15px;  и в итоге ширина container стала 260px*/
+
+  .title-1 {
+    font-size: 28px;
+  }
+
+  .title-2 {
+    font-size: 22px;
+  }
+
+  .title-3 {
+    font-size: 18px;
+  }
+
+  /* ! Header */
+
+  /* ! Nav */
+
+  .nav-list {
+    display: none;
+  }
+
+  /* ! Mobile nav */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  /* ! Main Page */
+  /* ! Promo */
+
+  .promo {
+    padding-top: 40px;
+    padding-left: 0;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("./../img/promo/promo-bg-mobile.jpg");
+    text-align: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .promo {
+      background-image: url("./../img/promo/promo-bg-mobile@2x.jpg");
+    }
+  }
+
+  .promo-title {
+    font-size: 34px;
+  }
+
+  .promo-text {
+    font-size: 14px;
+  }
+
+  /* ! Main-content */
+
+  .main-content {
+    padding: 40px 0;
+    row-gap: 40px;
+  }
+
+  .content-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .content-row.content-row-reverse {
+    flex-direction: column;
+  }
+
+  .content-img {
+    flex-basis: 120px;
+  }
+
+  /* ! Inner page */
+
+  .inner-page {
+    padding: 40px 0;
+  }
+
+  /* ! Cards */
+
+  .cards-wrapper {
+    row-gap: 20px;
+  }
+
+  .card {
+    width: 290px;
+  }
+
+  .card-decsr p {
+    font-size: 14px;
+  }
+
+  /* ! Article */
+
+  .article-content p {
+    font-size: 14px;
+  }
+
+  .article-content p + p {
+    margin-top: 14px;
+  }
+
+  .article-img {
+    margin: 20px 0;
+  }
+
+  /* ! Contacts page */
+  /* ! Form */
+
+  .form-wrapper {
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+
+  .inputs-wrapper {
+    font-size: 16px; /* ! добавил это свойство согласно макету, Юрий на это внимание не обратил*/
+  }
+
+  .input.input-50 {
+    flex-basis: 100%; /* ! добавил это свойство согласно макету, Юрий на это внимание не обратил*/
+  }
+
+  /* ! Address */
+
+  .address-wrapper {
+    gap: 20px;
+    font-size: 14px;
+  }
+  /* ! Footer */
+}

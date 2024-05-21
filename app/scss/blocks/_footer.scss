@@ -1,0 +1,36 @@
+.footer {
+	padding: 20px 0;
+	background-color: $dark-color;
+	box-shadow: $box-shadow-light;
+	font-size: 14px;
+	line-height: 1;
+	color: rgba(255, 255, 255, 0.5);
+	transition: color 0.2s ease-in;
+
+	@include mobile {
+		padding: 10px 0;
+	}
+
+	&__content {
+		a {
+			transition: color 0.2s ease-in;
+
+			&:hover {
+				color: rgba(255, 255, 255, 0.75);
+			}
+		}
+	}
+
+	&__row {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		@include mobile {
+			justify-content: center;
+		}
+	}
+}

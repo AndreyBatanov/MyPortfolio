@@ -1,0 +1,24 @@
+.footer {
+  padding: 60px 0;
+  background-color: #000;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+}

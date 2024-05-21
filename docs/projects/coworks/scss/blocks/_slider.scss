@@ -1,0 +1,16 @@
+.slider {
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: unset !important;
+    height: unset !important;
+    height: 400px !important;
+
+    @include mobile {
+      height: 250px !important;
+    }
+  }
+  //! & > *:first-child {
+  //!   padding-left: 15px;  //! Закомментировал, потому что при отсутствии  loop в этом свойстве нет необходимости
+  //! }
+}

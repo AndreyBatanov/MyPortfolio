@@ -1,0 +1,45 @@
+.price {
+  padding: 60px 0 120px;
+  background-color: #f6f6f6;
+
+  @include tablet {
+    padding: 60px 0 80px;
+  }
+
+  @include mobile {
+    padding: 40px 0 60px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+
+    @include mobile {
+      row-gap: 30px;
+    }
+
+
+    &>* {
+      flex: 1;
+
+      @include tablet {
+        min-width: 354px;
+      }
+
+      @include mobile {
+        min-width: unset;
+      }
+    }
+  }
+}

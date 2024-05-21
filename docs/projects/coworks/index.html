@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+  <title>СoWorks - Коворкинг мечты</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="container container--mobile-fluid">
+      <div class="header__row">
+
+        <a class="header__logo logo" href="#">
+          <img src="./img/logo/logo.svg" alt="Логотип СoWorks ">
+        </a>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#locations">Локация</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Сервис</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#price">Тарифы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#map">Расположение</a>
+            </li>
+            <li class="nav__item visible-decktop">
+              <button class="btn btn--dark" data-action="modal">Оставить заявку</button>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__nav-btn" id="openMobileNav">
+          <img src="./img/icons/nav-btn-open.svg" alt="Open nav">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="mobile-nav">
+    <h2 class="visually-hidden">Мобильная навигация</h2>
+
+    <div class="mobile-nav__header">
+      <a class="mobile-nav__logo logo" href="#">
+        <img src="./img/logo/logo.svg" alt="Логотип СoWorks ">
+      </a>
+
+      <button class="mobile-nav__btn" id="closeMobileNav">
+        <img src="./img/icons/nav-btn-close.svg" alt="Close nav">
+      </button>
+    </div>
+
+    <div class="mobile-nav__body">
+      <ul class="mobile-nav__list">
+        <li>
+          <a href="#locations">Локация</a>
+        </li>
+        <li>
+          <a href="#services">Сервис</a>
+        </li>
+        <li>
+          <a href="#price">Тарифы</a>
+        </li>
+        <li>
+          <a href="#map">Расположение</a>
+        </li>
+        <li>
+          <button class="btn btn--dark" data-action="modal">Оставить заявку</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <main class="main">
+    <section class="promo">
+      <div class="container container--large">
+        <div class="promo__wrapper">
+          <div class="promo__content">
+            <h1 class="title promo__title">
+              Место где
+              взлетают&nbsp;проекты
+            </h1>
+            <div class="promo__subtitle">
+              <p>
+                Лучший коворкинг для фрилансеров и&nbsp;IT специалистов в&nbsp;центре города
+              </p>
+            </div>
+            <div class="promo__btns">
+              <button class="btn btn--secondary" data-action="modal">Оставить заявку</button>
+              <a class="btn btn--outline" href="#benefits">Исследовать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="benefits__row">
+          <div class="benefits__img">
+            <img src="./img/benefits/benefits-img.jpg" srcset="./img/benefits/benefits-img@2x.jpg 2x"
+              alt="Преимущества">
+          </div>
+          <div class="benefits__descr">
+            <h2 class="title title--fz36 benefits__title">
+              Лучшее пространство для&nbsp;вашего бизнеса
+            </h2>
+            <div class="benefits__subtitle">
+              <p>
+                Продумали все до&nbsp;мелочей. Для фрилансеров и&nbsp;компаний.
+              </p>
+            </div>
+            <ul class="benefits__list">
+
+              <li class="benefits__item">
+
+                <div class="benefit">
+                  <img class="benefit__img" src="./img/benefits/clock.svg" alt="clock">
+                  <div class="benefit__descr">
+                    <h3 class="title title--fz24 benefit__title">
+                      Открыты 24 часа
+                    </h3>
+                    <p>
+                      Наш коворкинг открыт 24/7, гарантируя вам свободу творчества в&nbsp;удобное для вас время.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="benefits__item">
+
+                <div class="benefit">
+                  <img class="benefit__img" src="./img/benefits/snack.svg" alt="snack">
+                  <div class="benefit__descr">
+                    <h3 class="title title--fz24 benefit__title">
+                      Бесплатные снэки и&nbsp;напитки
+                    </h3>
+                    <p>
+                      Энергия на&nbsp;максимум. Наслаждайтесь бесплатными снэками и&nbsp;напитками, чтобы зарядиться
+                      в&nbsp;любой момент.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="benefits__item">
+
+                <div class="benefit">
+                  <img class="benefit__img" src="./img/benefits/game.svg" alt="game">
+                  <div class="benefit__descr">
+                    <h3 class="title title--fz24 benefit__title">
+                      Игровая зона отдыха
+                    </h3>
+                    <p>
+                      Наша игровая зона доступна для вас. Идеальное место для перерывов и&nbsp;вдохновения
+                      в&nbsp;любое время.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations" id="locations">
+
+      <div class="container">
+        <div class="locations__heading">
+          <h2 class="title title--fz42 locations__title">
+            Локации и&nbsp;рабочие пространства
+          </h2>
+          <div class="locations__controls">
+            <button class="prev">
+              <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="prev">
+            </button>
+            <button class="next">
+              <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="next">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container--tablet-fluid container--mobile-no-padding">
+        <div class="slider">
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-01.jpg" data-srcset="./img/slider/slide-01@2x.jpg 2x" width="525"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-02.jpg" data-srcset="./img/slider/slide-02@2x.jpg 2x" width="300"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-03.jpg" data-srcset="./img/slider/slide-03@2x.jpg 2x" width="435"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-04.jpg" data-srcset="./img/slider/slide-04@2x.jpg 2x" width="300"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-05.jpg" data-srcset="./img/slider/slide-05@2x.jpg 2x" width="300"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-06.jpg" data-srcset="./img/slider/slide-06@2x.jpg 2x" width="300"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-07.jpg" data-srcset="./img/slider/slide-07@2x.jpg 2x" width="525"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-08.jpg" data-srcset="./img/slider/slide-08@2x.jpg 2x" width="525"
+              alt="slide">
+          </div>
+
+          <div>
+            <img class="tns-lazy-img"
+              src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./img/slider/slide-09.jpg" data-srcset="./img/slider/slide-09@2x.jpg 2x" width="525"
+              alt="slide">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="locations__controls locations__controls--mobile">
+          <button class="prev">
+            <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="prev">
+          </button>
+          <button class="next">
+            <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="next">
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="title title--fz42 services__title">
+          Сервисы
+        </h2>
+        <ul class="services__list">
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/hand.svg" alt="services icons">
+            <h3 class="title service__title">
+              Секретарь
+            </h3>
+            <p>
+              Встреча гостей, пропусков, организация мероприятий&nbsp;&mdash; всё под контролем с&nbsp;нашим
+              секретарем.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/wifi.svg" alt="services icons">
+            <h3 class="title service__title">
+              Wi-Fi & Ethernet
+            </h3>
+            <p>
+              Безопасное соединение до 100 Мбит/с, IT-поддержка для вашей внутренней сети.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/printer.svg" alt="services icons">
+            <h3 class="title service__title">
+              Печать, сканирование
+            </h3>
+            <p>
+              Печать, сканирование, отправка документов по&nbsp;Wi-Fi&nbsp;&mdash; ваш бизнес без границ.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/cup.svg" alt="services icons">
+            <h3 class="title service__title">
+              Кофе, чай, вода
+            </h3>
+            <p>
+              Кофе, чай, вода&nbsp;&mdash; наши кофе-пойнты удовлетворят ваши вкусовые предпочтения.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/lock.svg" alt="services icons">
+            <h3 class="title service__title">
+              Безопасная система&nbsp;доступа
+            </h3>
+            <p>
+              3-уровневая система доступа обеспечивает безопасность в&nbsp;коворкинге и&nbsp;смарт-офисе.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/brush.svg" alt="services icons">
+            <h3 class="title service__title">
+              Ежедневный клининг
+            </h3>
+            <p>
+              Дневная и&nbsp;ночная уборка в&nbsp;CEO Rooms поддерживает порядок в&nbsp;каждой зоне.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/vidicon.svg" alt="services icons">
+            <h3 class="title service__title">
+              Видеонаблюдение
+            </h3>
+            <p>
+              Более 15&nbsp;точек фиксации и&nbsp;архивное хранение на&nbsp;сервере&nbsp;&mdash; ваша безопасность
+              важна.
+            </p>
+          </li>
+          <li class="services__item service">
+            <img class="service__img" src="./img/services/time.svg" alt="services icons">
+            <h3 class="title service__title">
+              Круглосуточный доступ
+            </h3>
+            <p>
+              Работайте 24/7&nbsp;в любой часовой пояс и&nbsp;обстоятельства&nbsp;&mdash; ваше пространство всегда
+              открыто.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="container">
+        <h2 class="title title--fz42 price__title">Тарифы</h2>
+        <div class="price__cards">
+
+          <article class="card">
+            <img class="card__img" src="./img/price/card-01.jpg" srcset="./img/price/card-01@2x.jpg 2x"
+              alt="Изображение карточки">
+            <div class="card__body">
+              <h3 class="title card__title">Разовое посещение</h3>
+              <div class="card__price">1 190 ₽</div>
+              <ul class="card__list">
+                <li class="card__item">Незакрепленное рабочее место</li>
+                <li class="card__item">Скоростной безлимитный интернет</li>
+                <li class="card__item">Монохромный принтер формата А4, сканер, копир</li>
+                <li class="card__item">Чай, кофе, вода</li>
+                <li class="card__item">Клиентское сопровождение</li>
+                <li class="card__item">Без гостевых визитов</li>
+                <li class="card__item">Переговорная комната отдельно</li>
+                <li class="card__item">Без специальной скидки</li>
+              </ul>
+              <div class="card__btn">
+                <button class="btn btn--price" data-action="modal">Оставить заявку</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="./img/price/card-02.jpg" srcset="./img/price/card-02@2x.jpg 2x"
+              alt="Изображение карточки">
+            <div class="card__body">
+              <h3 class="title card__title">Фрилансер</h3>
+              <div class="card__price">16 990 ₽ / месяц</div>
+              <ul class="card__list">
+                <li class="card__item">Незакрепленное рабочее место</li>
+                <li class="card__item">Скоростной безлимитный интернет</li>
+                <li class="card__item">Монохромный принтер формата А4, сканер, копир</li>
+                <li class="card__item">Чай, кофе, вода</li>
+                <li class="card__item">Клиентское сопровождение</li>
+                <li class="card__item">10 гостевых визитов в месяц</li>
+                <li class="card__item">4 часа переговорной комнаты</li>
+                <li class="card__item"> скидка 30% на аренду переговорных</li>
+              </ul>
+              <div class="card__btn">
+                <button class="btn btn--price" data-action="modal">Оставить заявку</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="./img/price/card-03.jpg" srcset="./img/price/card-03@2x.jpg 2x"
+              alt="Изображение карточки">
+            <div class="card__body">
+              <h3 class="title card__title">Рабочее место</h3>
+              <div class="card__price">22 990 ₽ / месяц</div>
+              <ul class="card__list">
+                <li class="card__item">Закрепленное рабочее место</li>
+                <li class="card__item">Скоростной безлимитный интернет</li>
+                <li class="card__item"> Монохромный принтер формата А4, сканер, копир</li>
+                <li class="card__item">Чай, кофе, вода</li>
+                <li class="card__item"> Клиентское сопровождение</li>
+                <li class="card__item">10 гостевых визитов в месяц</li>
+                <li class="card__item">8 часов переговорной комнаты</li>
+                <li class="card__item">скидка 30% на аренду переговорных</li>
+              </ul>
+              <div class="card__btn">
+                <button class="btn btn--price" data-action="modal">Оставить заявку</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__wrapper">
+          <div class="cta__content">
+            <h2 class="title title--fz42 cta__title">
+              Остались вопросы?
+            </h2>
+            <div class="cta__subtitle">
+              <p>
+                Напишите нам или закажите звонок, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течении&nbsp;15&nbsp;минут
+              </p>
+            </div>
+            <div class="cta__btns">
+
+              <a class="btn btn--telegram" href="tg://resolve?domain=имя_пользователя">
+                <img src="./img/icons/tg.svg" alt="telegram">
+                Telegram
+              </a>
+
+              <a class="btn btn--secondary" target="_blank" href="https://wa.me/+7903xxxxxxx">
+                <img src="./img/icons/whatsapp.svg" alt="whatsapp">
+                WhatsApp
+              </a>
+
+              <button class="btn btn--outline" data-action="modal">Оставить заявку</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map" id="map">
+      <div class="container">
+        <h2 class="title title--fz42 map__title">
+          Расположение
+        </h2>
+        <address class="map__address">
+          <p>
+            Пресненская набережная, дом 12, 20&nbsp;этаж.
+          </p>
+        </address>
+        <iframe class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.4962049173405!2d37.53528857625226!3d55.749881973083106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdcbfd1b72d%3A0x433d48214f76b256!2z0J_RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LEuLCAxMiwg0JzQvtGB0LrQstCwLCAxMjMzMTc!5e0!3m2!1sru!2sru!4v1713933474757!5m2!1sru!2sru"
+          width="1170" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!--! <img class="map__img" src="./img/map/map.jpg" srcset="./img/map/map@2x.jpg 2x" alt="map"> -->
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="faq__wrapper">
+          <h2 class="title title--fz42 faq__title">
+            Ответы на&nbsp;частые вопросы
+          </h2>
+          <div class="faq__topics">
+
+            <section class="topic">
+              <h3 class="topic__header">
+                <button class="topic__btn" type="button">
+                  <span class="topic__title">Как заказать пропуск</span>
+                  <img class="topic__icon" src="./img/icons/btn-plus.svg" alt="plus">
+                </button>
+              </h3>
+              <div class="topic__content">
+                <div class="topic__content-padding">
+                  <p>
+                    Для заказа пропуска в&nbsp;наш коворкинг вы&nbsp;можете воспользоваться удобной онлайн формой
+                    на&nbsp;нашем сайте. Просто заполните необходимую информацию, включая ваше имя, контактные данные
+                    и&nbsp;предпочтительный срок пользования коворкингом. Наша команда оперативно обработает ваш запрос
+                    и&nbsp;свяжется с&nbsp;вами для уточнения деталей и&nbsp;подтверждения бронирования.
+                  </p>
+                  <p>
+                    Если у&nbsp;вас возникли вопросы или вам нужна дополнительная помощь при заказе пропуска,
+                    не&nbsp;стесняйтесь обращаться к&nbsp;нашему отделу клиентского обслуживания. Мы&nbsp;готовы
+                    ответить
+                    на&nbsp;все ваши запросы и&nbsp;предоставить подробную информацию о&nbsp;наших услугах.
+                    Вы&nbsp;также
+                    можете связаться с&nbsp;нами по&nbsp;телефону или отправить электронное письмо, и&nbsp;наш
+                    специалист
+                    с&nbsp;удовольствием поможет вам сделать заказ и&nbsp;подобрать оптимальное решение для ваших
+                    потребностей.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="topic">
+              <h3 class="topic__header">
+                <button class="topic__btn" type="button">
+                  <span class="topic__title">Как добраться</span>
+                  <img class="topic__icon" src="./img/icons/btn-plus.svg" alt="plus">
+                </button>
+              </h3>
+              <div class="topic__content">
+                <div class="topic__content-padding">
+                  <p>
+                    Чтобы <a href="#map">добраться</a> в&nbsp;наш коворкинг, используйте общественный транспорт, такой
+                    как
+                    метро или автобус.
+                    Наш офис расположен в&nbsp;непосредственной близости от&nbsp;станции метро, выходите на&nbsp;выходе,
+                    указанном в&nbsp;нашем адресе. Пешеходный подход к&nbsp;офису обеспечен для вашего удобства.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="topic">
+              <h3 class="topic__header">
+                <button class="topic__btn" type="button">
+                  <span class="topic__title">Где припарковаться</span>
+                  <img class="topic__icon" src="./img/icons/btn-plus.svg" alt="plus">
+                </button>
+              </h3>
+              <div class="topic__content">
+                <div class="topic__content-padding">
+                  <p>
+                    Наш коворкинг предоставляет широкий выбор вариантов парковки для удобства наших клиентов. Прямо
+                    возле
+                    здания нашего офиса расположены выделенные парковочные места, где вы&nbsp;можете оставить свой
+                    автомобиль в&nbsp;течение всего вашего визита. Эти места обеспечивают удобный доступ к&nbsp;нашему
+                    зданию, сокращая время и&nbsp;усилия, затрачиваемые на&nbsp;поиск парковочного места.
+                  </p>
+                  <p>
+                    В&nbsp;нескольких минутах ходьбы от&nbsp;нашего коворкинга есть несколько общественных парковочных
+                    зон, где вы&nbsp;можете оставить свой автомобиль, если парковочные места прямо у&nbsp;нашего здания
+                    заняты.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__col">
+        <a class="footer__logo logo" href="#">
+          <img src="./img/logo/logo-footer.svg" alt="Логотип СoWorks">
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list nav__list--col">
+            <li class="nav__item">
+              <a class="nav__link" href="#locations">Локация</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Сервис</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#price">Тарифы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#map">Расположение</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="tg://resolve?domain=имя_пользователя">
+                <img src="img/socials/telegram.svg" alt="telegram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" target="_blank" href="https://wa.me/+7903xxxxxxx">
+                <img src="img/socials/whatsapp-social.svg" alt="whatsApp">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" target="_blank" href="https://vk.com/">
+                <img src="img/socials/vk.svg" alt="VK">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="mailto:mail@example.com">
+                <img src="img/socials/mail.svg" alt="email">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="modal">
+    <div class="modal__body">
+
+      <button class="modal__close" id="closeModal" type="button">
+        <img src="./img/icons/modal-close.svg" alt="Закрыть модальное окно">
+      </button>
+
+      <div class="modal__header">
+        <h2 class="title title--fz36 modal__title">Заказать звонок</h2>
+        <p>
+          Перезвоним в&nbsp;течении 15&nbsp;минут
+        </p>
+      </div>
+
+      <form class="modal__form">
+        <input class="modal__input" type="text" placeholder="Имя">
+        <input class="modal__input" type="tel" placeholder="Телефон">
+
+        <label class="modal__checkbox-label">
+          <input class="modal__real-checkbox visually-hidden" type="checkbox">
+          <span class="modal__fake-checkbox"></span>
+          Согласен&nbsp;на&nbsp;обработку&nbsp;персональных данных
+        </label>
+        <button class="btn btn--dark btn--wide" type="submit">Оставить заявку</button>
+      </form>
+
+    </div>
+  </section>
+
+  <a class="top-link" id="scrollToTopBtn" href="#top">
+    <img src="./img/icons/arrow-up.svg" alt="Arrow Up">
+  </a>
+  <!--! Vendors(подключаемые скрипты) -->
+  <script src="./js/tiny-slider/tiny-slider.js"></script>
+  <!--! Скрипты -->
+  <script src="./js/scrollToTop.js"></script>
+  <script src="./js/mobile-nav.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

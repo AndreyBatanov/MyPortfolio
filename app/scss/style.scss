@@ -1,0 +1,40 @@
+// Base
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/mixins";
+@import "./base/vars";
+@import "./base/utils";
+@import "./base/base";
+@import "./base/container";
+
+// Libs
+@import "./libs/fancybox";
+@import "./libs/tiny-slider";
+
+// Секции
+
+@import "./blocks/policy";
+@import "./blocks/main";
+@import "./blocks/resume";
+@import "./blocks/portfolio";
+@import "./blocks/contacts";
+@import "./blocks/form";
+@import "./blocks/footer";
+
+// Блоки, Элементы
+@import "./blocks/titles";
+@import "./blocks/social";
+@import "./blocks/logo";
+@import "./blocks/signs";
+@import "./blocks/projects";
+@import "./blocks/btns";
+@import "./blocks/dark";
+@import "./blocks/header";
+@import "./blocks/accordion";
+@import "./blocks/checkbox";
+@import "./blocks/fancybox";
+// Скрипты
+@import "./blocks/top-link";
+@import "./blocks/modal";
+@import "./blocks/modal-order";
+@import "./blocks/dark-mode-btn";

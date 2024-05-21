@@ -1,0 +1,81 @@
+.promo {
+  &__wrapper {
+    padding: 30px;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: $gradient, url("./../img/promo/promo-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+
+    @include mediaBG {
+      background-image: $gradient, url("./../img/promo/promo-bg@2x.jpg");
+    }
+
+    @include tablet {
+      height: 434px;
+      background-image: $gradient, url("./../img/promo/promo-bg-tablet.jpg");
+
+      @include mediaBG {
+        background-image: $gradient,
+          url("./../img/promo/promo-bg-tablet@2x.jpg");
+      }
+    }
+
+    @include mobile {
+      height: auto;
+      padding: 60px 15px;
+      border-radius: 20px;
+      background-image: $gradient, url("./../img/promo/promo-bg-mobile.jpg");
+
+      @include mediaBG {
+        background-image: $gradient,
+          url("./../img/promo/promo-bg-mobile@2x.jpg");
+      }
+    }
+  }
+
+  &__content {
+    max-width: 678px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    line-height: 1;
+
+    @include tablet {
+      max-width: 561px;
+      row-gap: 30px;
+    }
+
+    @include mobile {
+      max-width: 330px;
+      row-gap: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

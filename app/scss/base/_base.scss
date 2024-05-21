@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+body {
+  font-family: $font-family;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+
+
+
+p + p {
+  margin-top: 0.8em;
+}
+
+
+
+.polici {
+  a {
+    display: inline-block;
+    font-size: 13px;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $tenn;
+    }
+  }
+}
+
+

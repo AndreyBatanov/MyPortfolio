@@ -1,0 +1,23 @@
+.portfolio {
+  &__title {
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+    @include before_circle;
+    margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}

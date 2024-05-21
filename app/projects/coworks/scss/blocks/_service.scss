@@ -1,0 +1,25 @@
+.service {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2f2f2f;
+
+  &__img {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    min-height: 40px;
+    font-size: 20px;
+    color: #000;
+
+    @include tablet {
+      font-size: 18px;
+      min-height: 18px;
+    }
+  }
+}

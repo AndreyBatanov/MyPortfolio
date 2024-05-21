@@ -1,0 +1,49 @@
+.locations {
+  @include scrollTopMargin;
+
+  &__heading {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 430px;
+  }
+
+  &__controls {
+    display: flex;
+    column-gap: 20px;
+
+    @include tablet {
+      column-gap: 10px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+      margin-top: 20px;
+
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+
+  &__controls-img {
+    @include tablet {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}

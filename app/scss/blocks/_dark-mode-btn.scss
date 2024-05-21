@@ -1,0 +1,28 @@
+.dark-mode-btn {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 51px;
+  height: 26px;
+  background-color: #464648;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $light-color;
+    transition: all 0.2s ease-in;
+  }
+  &--active::before {
+    left: 26px;
+  }
+  &__icon {
+    z-index: 10;
+  }
+}

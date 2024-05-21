@@ -1,0 +1,9 @@
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+
+  @include mobile {
+    column-gap: 20px;
+  }
+}

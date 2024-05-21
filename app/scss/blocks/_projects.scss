@@ -1,0 +1,64 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: $box-shadow-light;
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 210px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    background-color: #f1f8fb;
+    background-image: url("./../img/project/laptop.svg");
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    img {
+      border: 1px solid #0d1012;
+      margin-top: -7px;
+      width: 216px;
+      height: 136px;
+      object-fit: cover;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        border-radius: 10px;
+        border: 8px solid #0d1012;
+        transform: scale(0.9);
+        overflow: hidden;
+      }
+    }
+  }
+  &__content {
+    padding: 25px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  &__descr {
+    min-height: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  &__skills {
+    font-size: 12px;
+    line-height: 1.3;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+}

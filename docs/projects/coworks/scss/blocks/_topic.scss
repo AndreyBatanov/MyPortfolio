@@ -1,0 +1,86 @@
+.topic {
+  padding: 30px 0;
+  border-top: 1px solid #ececf1;
+  border-bottom: 1px solid #ececf1;
+
+  @include tablet {
+    padding: 17px 0;
+  }
+
+  @include mobile {
+    padding: 15px 0;
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    transition: all 0.2s ease-in;
+
+    &:hover:not(:focus-visible) {
+      opacity: 0.5;
+    }
+    &:active:not(:focus-visible) .topic__title {
+      color: #00ae6c;
+    }
+    &:focus-visible {
+      outline-offset: 1px;
+      outline: #00ae6c auto 1px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    color: #000;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__icon {
+    @include mobile {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__content {
+    // display: none; //! Первый вариант
+    // padding-top: 30px;
+    line-height: 1.5;
+    font-size: 16px;
+    a {
+      text-decoration: underline;
+    }
+    //! второй вариант, для плавного расскрытия аккордеона
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in;
+
+    // & > *:first-child {    //? Вариант отступа без обертки в новый класс
+    //   padding-top: 30px;
+    // }
+
+    @include mobile {
+      font-size: 14px;
+      padding-top: 13px;
+    }
+  }
+  //! Первый вариант
+  // &--open .topic__content {
+  //   display: block;
+  // }
+
+  &__content-padding {
+    padding-top: 30px;
+  }
+}
+
+.topic + .topic {
+  margin-top: -1px;
+}

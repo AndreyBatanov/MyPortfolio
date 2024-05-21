@@ -1,0 +1,83 @@
+.dark {
+  color: $light-color;
+  background-color: $bg-color;
+  .title--home,
+  .title--page {
+    color: $light-color;
+  }
+  .header,
+  .footer {
+    background-color: $bg-accent;
+    box-shadow: $box-shadow-dark;
+  }
+  .project {
+    &__btn {
+      border: 1px solid $light-color;
+      box-shadow: $box-shadow-dark;
+    }
+    &__img {
+      box-shadow: $box-shadow-dark;
+    }
+    &__content {
+      background-color: $bg-accent;
+      box-shadow: $box-shadow-dark;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .cards__item {
+    background-color: $bg-accent;
+    box-shadow: $box-shadow-light;
+  }
+  .resume {
+    &__column {
+      background-color: $bg-accent;
+      box-shadow: $box-shadow-dark;
+      ul {
+        li {
+          &:after {
+            background-color: $light-color;
+          }
+        }
+      }
+    }
+    .accordion__item::before {
+      background-color: $light-color;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      background-color: $bg-accent;
+      box-shadow: $box-shadow-dark;
+      color: $light-color;
+    }
+  }
+  .modal-order {
+    background-color: $light-color;
+    box-shadow: $box-shadow-dark;
+
+    color: $dark-color;
+  }
+  .form {
+    input {
+      color: $dark-color;
+      border-bottom: 1px solid $dark-color;
+    }
+    &__btn {
+      &:hover {
+        box-shadow: $box-shadow-light;
+        border: 1px solid #252525;
+      }
+    }
+  }
+  .modal-order {
+    &__title {
+      color: $dark-color;
+    }
+    &__close {
+      @include mobile {
+        color: $dark-color;
+      }
+    }
+  }
+}

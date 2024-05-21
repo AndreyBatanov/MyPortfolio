@@ -1,0 +1,56 @@
+.header {
+	margin-bottom: 50px;
+	padding: 20px 0;
+	background-color: $dark-color;
+	box-shadow: $box-shadow-light;
+
+	color: $light-color;
+
+	@include mobile {
+		padding: 10px 0;
+	}
+
+	&__row {
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 15px;
+	}
+
+	&__logo {
+		padding-left: 10px;
+		position: relative;
+		z-index: 1;
+
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 1.1;
+
+		@include mobile {
+			max-width: 200px;
+			font-size: 13px;
+		}
+
+		@include before_circle;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 1;
+
+		@include mobile {
+			font-size: 24px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 15px;
+	}
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Контакты - Эпик Трэвел</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media-tablet.css">
+  <link rel="stylesheet" href="./css/media-mobile.css">
+</head>
+
+<body class="sticky-footer">
+
+  <header class="header header-bg" id="header">
+    <div class="container">
+
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <img src="./img/logo.svg" alt="Эпик Трэвел">
+        </a>
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tours.html">Туры</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a class="active" href="contacts.html">Контакты</a></li>
+        </ul>
+        <button class="btn-mobile-nav" id="btn-mobile-nav" type="button">
+          <img id="mobile-nav-img" src="./img/icons/open-mobile-nav.svg" alt="Open Nav">
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="tours.html">Туры</a></li>
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="inner-page">
+    <div class="container">
+      <div class="inner-page-title-wrapper">
+        <h1 class="title-1 text-center">Контакты</h1>
+      </div>
+
+      <div class="contacts-colums">
+
+        <form class="form-wrapper">
+          <h2 class="title-2">Заявка на подбор тура</h2>
+
+          <section class="form-group">
+            <h3 class="title-3">Личные данные</h3>
+            <div class="inputs-wrapper">
+              <input class="input" type="text" name="name" placeholder="Введите имя">
+              <input class="input input-50" type="tel" name="phone" placeholder="Телефон">
+              <input class="input input-50" type="email" name="email" placeholder="Email">
+            </div>
+          </section>
+
+          <section class="form-group">
+            <h3 class="title-3">Количество человек для тура</h3>
+            <ul class="radio-list">
+              <li>
+                <label>
+                  <input class="real-radio visually-hidden" type="radio" name="number" value="2-4">
+                  <span class="fake-radio"></span>
+                  2 - 4 человека
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="real-radio visually-hidden" type="radio" name="number" value="5-10">
+                  <span class="fake-radio"></span>
+                  5 - 10 человек
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="real-radio visually-hidden" type="radio" name="number" value="11+">
+                  <span class="fake-radio"></span>
+                  11 человек и более
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <section class="form-group">
+            <h3 class="title-3">Какие направления вам интересны</h3>
+            <ul class="checkbox-list">
+              <li>
+                <label>
+                  <input class="real-checkbox visually-hidden" type="checkbox" name="tracking">
+                  <span class="fake-checkbox"></span>
+                  Трекинг туры, походы по горам и пересеченной
+                  местности.
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="real-checkbox visually-hidden" type="checkbox" name="mountains">
+                  <span class="fake-checkbox"></span>
+                  Восхождения на вершины.
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="real-checkbox visually-hidden" type="checkbox" name="exotic">
+                  <span class="fake-checkbox"></span>
+                  Экзотические джунгли, вулканы.
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="real-checkbox visually-hidden" type="checkbox" name="combi">
+                  <span class="fake-checkbox"></span>
+                  Комбинированные: море, горы, города, лес.
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <button class="submit-btn" type="submit">Отправить заявку</button>
+
+        </form>
+
+        <section class="address-wrapper">
+          <div class="address-group">
+            <h2 class="title-2">Телефон и адрес</h2>
+
+            <address>
+              <ul class="address-list">
+                <li>
+                  <img src="./img/icons/phone.svg" alt="Телефон">
+                  +7 (905) 456-12-34
+                </li>
+                <li>
+                  <img src="./img/icons/mail.svg" alt="Почта">
+                  info@epictravel.ru
+                </li>
+                <li>
+                  <img src="./img/icons/map.svg" alt="Адрес">
+                  г. Москва, Рязанский проспект 54, офис 112.
+                </li>
+              </ul>
+            </address>
+
+          </div>
+
+          <div class="address-group">
+            <h2 class="title-2">Карта</h2>
+            <!-- <img src="./img/contacts/map.jpg" srcset="./img/contacts/map@2x.jpg 2x" alt="Карта"> -->
+            <iframe class="yandex-map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa172327a23ef51587419990017155693199a2812e4ae930656c54f7bc330b54e&amp;source=constructor&amp;scroll=false"
+              style="border: none;">
+            </iframe>
+
+
+            <!--todo  Закомментировал согласно дизайну макета -->
+            <!-- <iframe class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.4498017359915!2d37.792926976249575!3d55.715934873070566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab59b3be61f9b%3A0x71e8ca6a8cffd5fb!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCA1NCwgMTEyLCDQnNC-0YHQutCy0LAsIDEwOTM3Nw!5e0!3m2!1sru!2sru!4v1711986383910!5m2!1sru!2sru"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>  -->
+
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+
+        <div class="footer-copyright">
+          <p>
+            2024 © ЭпикТрэвел.<br>
+            Все права защищены
+          </p>
+        </div>
+
+        <address class="footer-contacts">
+          <a href="tel:+79054561234" class="footer-phone">
+            +7 (905) 456-12-34
+          </a><br>
+          <a href="mailto:info@epictravel.ru" class="footer-email">
+            info@epictravel.ru
+          </a><br>
+          <p class="footer-address">
+            г. Москва, Рязанский проспект 54, офис 112
+          </p>
+        </address>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

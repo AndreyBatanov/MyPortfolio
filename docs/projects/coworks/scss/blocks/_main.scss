@@ -1,0 +1,16 @@
+.main {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+
+  @include tablet {
+    margin-bottom: 80px;
+    row-gap: 80px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+    row-gap: 60px;
+  }
+}

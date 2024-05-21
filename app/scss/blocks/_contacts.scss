@@ -1,0 +1,25 @@
+.contacts {
+	&__wrapper {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		background-color: #f0f5f9;
+		border-radius: 10px;
+		box-shadow: $box-shadow-light;
+		text-align: center;
+		color: $dark-color;
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 25px;
+
+		@include mobile {
+			gap: 20px;
+		}
+	}
+}

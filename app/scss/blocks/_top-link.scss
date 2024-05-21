@@ -1,0 +1,23 @@
+.top-link {
+  position: fixed;
+  right: 15px;
+  bottom: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: $accent-color;
+  border-radius: 18px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+
+  &--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

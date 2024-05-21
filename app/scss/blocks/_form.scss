@@ -1,0 +1,27 @@
+.form {
+  max-width: 360px;
+  &__row {
+    margin: 0 -20px;
+    display: flex;
+  }
+  &__group {
+    position: relative;
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  input {
+    width: 100%;
+    padding: 9px 0;
+    color: $light-color;
+    font-size: 15px;
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid $light-color;
+    background-color: transparent;
+  }
+  &__btn {
+    width: 100%;
+  }
+}

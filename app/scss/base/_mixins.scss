@@ -1,0 +1,63 @@
+@mixin tablet() {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mediaBG() {
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin before_circle() {
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 0;
+		width: 38px;
+		height: 38px;
+		transform: translateY(-50%);
+		border-radius: 100%;
+		background: $accent-color;
+	}
+}
+
+@mixin after_divider() {
+	&::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50px;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 3px;
+		background-color: $accent-color;
+
+		@include mobile {
+			top: 44px;
+		}
+	}
+}
+
+@mixin scrollTopMargin() {
+	scroll-margin-top: 60px;
+
+	@include tablet {
+		scroll-margin-top: 40px;
+	}
+
+	@include mobile {
+		scroll-margin-top: 30px;
+	}
+}

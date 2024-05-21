@@ -1,0 +1,40 @@
+.logo {
+	position: relative;
+	display: inline-block;
+
+	&__text {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s ease-in;
+
+		opacity: 0;
+		position: absolute;
+		left: 103px;
+		bottom: 0;
+		top: 21px;
+		line-height: 1;
+		color: $light-color;
+		background-color: $accent-color;
+		border-radius: 80px;
+		font-weight: 800;
+		font-size: 12px;
+
+		width: 135px;
+		height: 18px;
+		cursor: pointer;
+		transform: scale(0);
+		z-index: 2;
+		@include mobile {
+			left: 60px;
+			top: 21px;
+			font-size: 12px;
+			height: 15px;
+		}
+	}
+
+	&:hover .logo__text {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,37 @@
+.header {
+  padding: 40px 0;
+  color: #000;
+
+  a {
+    color: #000;
+  }
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__nav {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__nav-btn {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+}

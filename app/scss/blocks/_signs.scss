@@ -1,0 +1,46 @@
+.signs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  &__item {
+    padding: 2px 6px;
+    min-height: 19px;
+    border-radius: 2px;
+
+    font-family: $second-family;
+    font-size: 12px;
+    color: $light-color;
+    &--html {
+      background-color: #414141;
+    }
+    &--css {
+      background-color: #39a0ff;
+    }
+    &--scss {
+      background-color: #dd6adf;
+    }
+    &--gulp {
+      background-color: #ec473c;
+    }
+    &--js {
+      background-color: #ffce20;
+      color: $dark-color;
+    }
+    &--react {
+      background-color: #33d6f0;
+    }
+    &--node {
+      background-color: #67cf00;
+    }
+    &--php {
+      background-color: #b07fed;
+    }
+    &--wp {
+      background-color: #0f8cc6;
+    }
+    &--jquery {
+      background-color: #39a0ff;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.resume {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    @include mobile {
+      padding-top: 0;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__column {
+    padding: 15px;
+    background-color: #f0f5f9;
+    border-radius: 10px;
+    box-shadow: $box-shadow-light;
+
+    ul {
+      li {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: calc(100% + 16px);
+          top: -16px;
+          left: 0;
+          background-color: $dark-color;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 35px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: $accent-color;
+      border-radius: 100%;
+      left: -7px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__btn {
+    grid-column: span 2;
+    margin: 0 auto;
+    @include mobile {
+      grid-column: span 1;
+    }
+  }
+}
